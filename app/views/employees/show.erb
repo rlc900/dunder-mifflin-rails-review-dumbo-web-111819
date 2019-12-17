@@ -1,0 +1,8 @@
+<h1><%="#{@employee.first_name} #{@employee.last_name}" %>'s Page</h1>
+<%= @employee.alias %><br />
+<%= @employee.title %><br />
+<%= @employee.office %><br />
+
+<img src= <%= @employee.img_url %> alt="Italian Trulli">
+
+<%= link_to "Edit", edit_employee_path(@employee) %>
